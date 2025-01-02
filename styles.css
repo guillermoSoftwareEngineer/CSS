@@ -1,0 +1,734 @@
+body{
+    margin:0;
+
+    text-align: center;
+    color:greenyellow;
+    background-image: url(./images/fondo.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/fondo.jpeg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.8; 
+    filter: brightness(0.1); 
+    z-index: -1; 
+    
+}
+
+h1{
+    color:#F39C12 ;
+}
+
+h2{
+    color:#4CBD49;
+}
+
+h3{
+    color:#F4D03F;
+}
+p{
+    color:white;
+}
+
+img{
+    border: 2px solid white; 
+    border-radius: 5%;
+}
+
+a{
+    color: white;
+    align-items: end;
+    font-size: 25px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-decoration: none;
+}
+
+li a{
+    color:#F39C12;
+    text-shadow: 2px 2px black;
+}
+
+indice-color{
+    color: #4CBD49;
+}
+
+a:hover{
+    font-size: 28px; 
+    color: #4CBD49; 
+}
+
+.final-nav{
+    margin: 5% 0% 3% 0% ;
+    display: flex;
+    justify-content: space-around !important;
+    
+}
+
+.pseudo{
+    border: 2px solid white; 
+    border-radius: 5%;
+    margin: 2% 30% 0 30%;
+}
+
+.pseudo:hover{
+    color: purple ;
+}
+
+.especificidad{
+    max-width: 80vw;
+}
+
+.prueba{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    align-self: center;
+    color: black;
+}
+
+.item  {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 2% 2% 2% 2%;
+    align-self: center;
+    color: white;
+}
+
+.item-2  {
+    display: inline-block;
+    width: 20%;
+    height: 20%;
+    background-color: blue;
+    margin: 2% 2% 2% 2%;
+    align-self: center;
+    color: white;
+}
+p span{
+    font-size: 150%;
+    color:red;
+}
+
+strong{
+    color: #4CBD49;
+}
+
+.texto{
+    color:blueviolet;
+    font-size: 200%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 8;
+    font-weight: 400;
+     
+}
+  
+.font-stretch-ultra-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: ultra-condensed;
+  }
+  .font-stretch-extra-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: extra-condensed;
+  }
+  .font-stretch-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: condensed;
+  }
+  .font-stretch-semi-condensed {
+    font-family: "Arial", sans-serif;
+    font-stretch: semi-condensed;
+  }
+  .font-stretch-normal {
+    font-family: "Arial", sans-serif;
+    font-stretch: normal;
+  }
+  .font-stretch-semi-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: semi-expanded;
+  }
+  .font-stretch-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: expanded;
+  }
+  .font-stretch-extra-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: extra-expanded;
+  }
+  .font-stretch-ultra-expanded {
+    font-family: "Arial", sans-serif;
+    font-stretch: ultra-expanded;
+  }
+
+.p-ejemplo{
+    font-family: "Jockey One", sans-serif;
+    /* esta clase solo se uso para dar el ejemplo de uso de fonts con google en la pagina 5 index5 */
+}
+
+
+/* aqui inicia el codigo css, para los ejemplos de flexbox con lista desplegable en el HTML */
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+.container {
+    background-color: blue;
+    display: flex;
+    width: 240px;
+    height: 240px;
+    align-self: center;
+  }
+
+  .items1, .items2, .items3, .items4 {
+    width: 20px;
+    height: 20px;
+  }
+
+  .items1 {
+    background-color: red;
+  }
+  .items2 {
+    background-color: green;
+  }
+  .items3 {
+    background-color: white;
+  }
+  .items4 {
+    background-color: orangered;
+  }
+
+/* aqui termina el codigo css, para los ejemplos de flexbox con lista desplegable en el HTML */
+
+/* inicio de clases para ejemplo de justify content  */
+.justify-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: auto; /*para centrar con respecto al contenedor */
+  margin-right: auto; /*para centrar con respecto al contenedor */
+}
+
+.justify-container {
+  background-color: #3498db;
+  display: flex;
+  width: 320px;
+  height: 160px;
+  align-items: center;
+}
+
+.justify-items1 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #f1c40f;
+  color: black;
+}
+.justify-items2 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #091b7e;
+  color: black;
+}
+.justify-items3 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #e23509;
+  color: black;
+}
+/* final de clases para ejemplo de justify content  */
+
+/* inicio clases específicas para el ejemplo de align-items */
+
+/* Estilo del contenedor que rodea los ítems */
+
+#flexContainerAlignExample {
+  display: flex;
+  width: 80%; /* Ocupa el 80% del ancho disponible */
+  height: 80%;
+  max-width: 600px; /* Limita el ancho máximo del contenedor */
+  background-color: #f3f3f3;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio igual entre los elementos */
+}
+
+.align-container-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 300px; /* Altura para ajustar bien los ítems */
+  margin-top: 20px; /* Separación de la parte superior */
+}
+
+.align-items1 {
+  width: 50px;
+  height: auto;
+  margin: 5px;
+  background-color: #f39c12;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items2 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #3498db;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-items3 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background-color: #e74c3c;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* fin clases específicas para el ejemplo de align-items */
+
+/* inicio clases align content  */
+
+.align-content-items1, 
+.align-content-items2, 
+.align-content-items3, 
+.align-content-items4, 
+.align-content-items5, 
+.align-content-items6 {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.align-content-items1 { background-color: #e74c3c; }
+.align-content-items2 { background-color: #3498db; }
+.align-content-items3 { background-color: #f39c12; }
+.align-content-items4 { background-color: #2ecc71; }
+.align-content-items5 { background-color: #9b59b6; }
+.align-content-items6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.align-content-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 300px; /* Altura del contenedor */
+  margin-top: 20px;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerAlignContentExample {
+  display: flex;
+  flex-wrap: wrap; /* Para que los ítems se agrupen en múltiples líneas */
+  width: 80%;
+  max-width: 220px;
+  height: 200px; /* Altura fija para ver el efecto de align-content */
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+  align-content: flex-start; /* Valor inicial de align-content */
+}
+
+/* fin clases align content  */
+
+
+
+/* inicio clases grow  column (columnas)*/
+
+/* Clases específicas para el ejemplo de flex-grow */
+.flex-grow-item1, 
+.flex-grow-item2, 
+.flex-grow-item3 {
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-grow-item1 { background-color: #e74c3c; }
+.flex-grow-item2 { background-color: #3498db; }
+.flex-grow-item3 { background-color: #2ecc71; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-grow-wrapper {
+  display: flex;
+  justify-content: center; /* Centra el contenedor horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  height: 400px; /* Altura del contenedor */
+  margin-top: 20px;
+  
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexGrowExample {
+  display: flex;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+  flex-direction: column;
+}
+
+
+/* fin clases grow column (columnas) */
+
+
+
+/* inicio clases grow con row (filas)  */
+
+ /* Clases específicas para el ejemplo de flex-grow-direction */
+ .flex-grow-row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-grow-row-container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 300px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.flex-grow-row-item1, .flex-grow-row-item2, .flex-grow-row-item3 {
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-grow-row-item1 { background-color: #e74c3c; }
+.flex-grow-row-item2 { background-color: #3498db; }
+.flex-grow-row-item3 { background-color: #2ecc71; }
+
+/* fin clases grow con row (filas)  */
+
+
+/* Inicio clases flex shrink columnas  */
+
+/* Clases específicas para el ejemplo de flex-shrink columnas */
+.flex-shrink-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-shrink-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 400px;
+  max-width: 800px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.flex-shrink-item1, .flex-shrink-item2, .flex-shrink-item3 {
+  flex-basis: 200px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-shrink-item1 { background-color: #e74c3c; }
+.flex-shrink-item2 { background-color: #3498db; }
+.flex-shrink-item3 { background-color: black; }
+
+/* Fin clases flex shrink columnas */
+
+/* Clases específicas para el ejemplo de flex-shrink con filas */
+.flex-shrink-row-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex-shrink-row-container {
+  display: flex;
+  flex-direction: row;
+  width: 400px; /* Ancho reducido para forzar el encogimiento */
+  height: 300px;
+  background-color: #f9f9f9;
+  border: 1px solid #333;
+  padding: 15px;
+}
+
+.flex-shrink-row-item1, .flex-shrink-row-item2, .flex-shrink-row-item3 {
+  flex-basis: 200px; /* Ancho mayor para ver el efecto de flex-shrink */
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-shrink-row-item1 { background-color: #9b59b6; }
+.flex-shrink-row-item2 { background-color: #1abc9c; }
+.flex-shrink-row-item3 { background-color: #e67e22; }
+
+
+/* fin clases flex shrink filas */
+
+/* inicio de flex-basis */
+
+/* Clases específicas para el ejemplo de flex-basis */
+.flex-basis-item1, 
+.flex-basis-item2, 
+.flex-basis-item3 {
+  height: 50px; /* Altura fija para ver el efecto de flex-basis en ancho */
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-basis-item1 { background-color: #e74c3c; }
+.flex-basis-item2 { background-color: #3498db; }
+.flex-basis-item3 { background-color: #2ecc71; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-basis-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexBasisExample {
+  display: flex;
+  flex-direction: row; /* Dirección en fila para ver el efecto en ancho */
+  width: 80%;
+  max-width: 600px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+}
+
+
+/* fin de flex-basis */
+
+/* inicio flex-shortHand*/
+
+/* Clases específicas para el ejemplo de propiedad abreviada flex */
+.flex-shorthand-item1, 
+.flex-shorthand-item2, 
+.flex-shorthand-item3 {
+  flex: 1 1 100px; /* Propiedad abreviada por defecto */
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-shorthand-item1 { background-color: #8e44ad; }
+.flex-shorthand-item2 { background-color: #2980b9; }
+.flex-shorthand-item3 { background-color: #27ae60; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-shorthand-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexShorthandExample {
+  display: flex;
+  flex-direction: row; /* Dirección en fila para ver el efecto en ancho */
+  width: 80%;
+  max-width: 600px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: space-around; /* Espacio entre los ítems */
+}
+/* fin  flex-shortHand*/
+
+/* Inicio wrap */
+/* Clases específicas para el ejemplo de flex-wrap */
+.flex-wrap-item1, 
+.flex-wrap-item2, 
+.flex-wrap-item3, 
+.flex-wrap-item4, 
+.flex-wrap-item5, 
+.flex-wrap-item6 {
+  width: 120px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-wrap-item1 { background-color: #e74c3c; }
+.flex-wrap-item2 { background-color: #3498db; }
+.flex-wrap-item3 { background-color: #f39c12; }
+.flex-wrap-item4 { background-color: #2ecc71; }
+.flex-wrap-item5 { background-color: #9b59b6; }
+.flex-wrap-item6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-wrap-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexWrapExample {
+  display: flex;
+  flex-wrap: nowrap; /* Valor inicial de flex-wrap */
+  width: 60%; /* Limita el ancho para ver el efecto de wrap */
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: flex-start;
+}
+
+
+/* Fin wrap */
+
+/* Inicio flex-flow */
+/* Clases específicas para el ejemplo de flex-flow */
+.flex-flow-item1, 
+.flex-flow-item2, 
+.flex-flow-item3, 
+.flex-flow-item4, 
+.flex-flow-item5, 
+.flex-flow-item6 {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+.flex-flow-item1 { background-color: #e74c3c; }
+.flex-flow-item2 { background-color: #3498db; }
+.flex-flow-item3 { background-color: #f39c12; }
+.flex-flow-item4 { background-color: #2ecc71; }
+.flex-flow-item5 { background-color: #9b59b6; }
+.flex-flow-item6 { background-color: #1abc9c; }
+
+/* Estilo del contenedor que rodea los ítems */
+.flex-flow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Estilo del contenedor flexible para los ítems */
+#flexContainerFlexFlowExample {
+  display: flex;
+  flex-flow: row nowrap; /* Valor inicial de flex-flow */
+  width: 60%; /* Limita el ancho para ver el efecto de wrap en filas */
+  height: auto;
+  max-width: 600px;
+  background-color: #ecf0f1;
+  border: 1px solid #333;
+  padding: 10px;
+  justify-content: flex-start;
+}
+/* Fin flex-flow */

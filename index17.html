@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CSS pag 17</title>
+</head>
+<body>
+
+    <div class="final-nav">
+        <a href="index16.html">PAG 16</a>
+        <a href="index.html">INICIO</a>
+        <a href="index18.html">PAG 18</a> 
+    </div>  
+    
+    <h2>PROPIEDADES DE FLEXBOX II</h2>
+
+    <h3>justify-content</h3>
+    <p>Esta propiedad controla la forma en que se organizan los elementos frontalmente</p>
+
+    <p>puede presentar varias propiedades, como:</p>
+
+    <p>
+      <i style="color: green;">flex-start:</i>  Alinea los elementos al principio del contenedor (valor por defecto). <br><br>
+      <i style="color: green;">flex-end:</i>  Alinea los elementos al final del contenedor. <br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos al centro del contenedor.<br><br>
+      <i style="color: green;">space-between:</i>  Distribuye los elementos con espacio igual entre ellos. <br><br>
+      <i style="color: green;">space-around:</i>  Distribuye los elementos con espacio igual alrededor de cada uno. <br><br>
+      <i style="color: green;">space-evenly:</i>  Distribuye los elementos con espacio igual entre ellos y en los extremos.
+    </p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript</p>
+
+    <img src="./images/justifyHtml.png" alt=""><br><br>
+    <img src="./images/justifyCSS.png" alt=""><br><br>
+    <img src="./images/justifyJavaScript.png" alt=""><br><br>
+
+    <p>Selecciona el valor de la propiedad y veras su comportamiento</p>
+
+    <div>
+      <label for="justifyContentExample">Selecciona la alineación de los elementos:</label>
+      <select id="justifyContentExample">
+        <option value="flex-start">flex-start</option>
+        <option value="flex-end">flex-end</option>
+        <option value="center">center</option>
+        <option value="space-between">space-between</option>
+        <option value="space-around">space-around</option>
+        <option value="space-around">space-evenly</option>
+      </select>
+    </div>
+  
+    <div class="justify-container-wrapper">
+      <div class="justify-container" id="justifyExampleContainer">
+        <div class="justify-items1">1</div>
+        <div class="justify-items2">2</div>
+        <div class="justify-items3">3</div>
+      </div>
+    </div>
+  
+    <h3>Align Items</h3>
+    <p>Esta propiedad controla la alineacion vertical de los elementos eje perpendicular al principal</p>
+
+    <p>puede presentar varias propiedades, como:</p>
+
+    <p>
+      <i style="color: green;">stretch:</i> Estira los elementos al total del largo del contenedor (posicion por defecto) <br><br>
+      <i style="color: green;">flex-start: </i>  Alinea los elementos al inicio del eje transversal(arriba)<br><br>
+      <i style="color: green;">flex-end:</i>  Alinea los elementos al final del eje transversal (abajo).<br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos en el centro del eje vertical<br><br>
+      <i style="color: green;">baseline:</i>  Alinea los elementos según la línea base del texto de cada elemento. Es <br>
+      es decir el alto del texto que contengan internamente
+    </p>
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript</p>
+
+    <img src="./images/alignItemsHtml.png" alt=""><br><br>
+    <img src="./images/alignItemsCSS.png" alt=""><br><br>
+    <img src="./images/alignItemsJavaScript.png" alt=""><br><br>
+
+    <div>
+      <label for="alignItemsExample">Selecciona la alineación vertical de los elementos:</label>
+      <select id="alignItemsExample">
+        <option value="flex-start">Inicio (flex-start)</option>
+        <option value="flex-end">Final (flex-end)</option>
+        <option value="center">Centro (center)</option>
+        <option value="stretch">Estirar (stretch)</option>
+        <option value="baseline">Línea base (baseline)</option>
+      </select>
+    </div>
+
+        <!-- Contenedor para el ejemplo de align-items -->
+        <div class="align-container-wrapper">
+          <div id="flexContainerAlignExample">
+            <div class="align-items1">1</div>
+            <div class="align-items2">2</div>
+            <div class="align-items3">3</div>
+          </div>
+        </div>
+
+    <p style="color: red;">Strech solo funciona si los items no tienen un height definido, como lo esta el elemento 1</p>
+    <p style="color: red;">los elementos 2 y 3, tiene definido el height, por lo tanto strech no funciona, lo mismo <br>
+    sucede con linea base (base-line)</p>
+
+    <h3>align-content</h3>
+    <p>Controla como se comportan los elementos dentro del contenedor flex en el eje transversal <br>
+    es mas comunmente usado cuando hay varias lineas de elementos en el contenedor flex, es decir <br>
+    <i style="color: green;" >Cuando hay mas de una linea de contenido</i></p>
+    <p>Si el contenedor ya tiene suficiente altura para acomodar los elementos (es decir, las líneas de <br>
+     elementos llenan el contenedor), el estiramiento no se notará porque ya están ocupando todo el espacio.</p>
+     <p>Sin embargo, si el contenedor es más alto que el espacio necesario para las líneas de elementos, <br>
+    entonces el stretch estirará las líneas de elementos para llenar todo el espacio vertical disponible.</p>
+
+    <p>Los valores para esta propiedad pueden ser:</p>
+
+    <p>
+       Se alinean en la parte superior <br><br>
+      <i style="color: green;">flex-end: </i>  se alinean en la parte inferior<br><br>
+      <i style="color: green;">center:</i>  Alinea los elementos al centro del contenedor<br><br>
+      <i style="color: green;">space-between: </i>  se distribuyen dejando un espacio igual entre ellos(items) (afecta el margin)<br><br>
+      <i style="color: green;">space-around:</i>  Alinea los elementos dejando un espacio igual alrededor <br><br>
+      <i style="color: green;">space-evenly:</i>  Alinea los elementos ejando un espacio igual alrededor y entre ellos (items) <br><br>
+      <i style="color: green;">stretch: </i>Las líneas se estirarán para ocupar todo el espacio vertical del contenedor. (afecta el tamaño del contenedor)
+    </p> <br><br>
+
+
+    <p>El siguiente es el codigo del ejemplo en HTML, CSS y JavaScript</p>
+
+    <img src="./images/alignContentHtml.png" alt=""><br><br>
+    <img src="./images/alignContentCSS.png" alt=""><br><br>
+    <img src="./images/alignContentJavaScript.png" alt=""><br><br>
+
+    <label for="alignContentExample">Selecciona la alineación del contenido (align-content):</label>
+      <select id="alignContentExample">
+        <option value="flex-start">Inicio (flex-start)</option>
+        <option value="flex-end">Final (flex-end)</option>
+        <option value="center">Centro (center)</option>
+        <option value="space-between">Espacio entre (space-between)</option>
+        <option value="space-around">Espacio alrededor (space-around)</option>
+        <option value="space-evenly">Espacio uniformemente (space-evenly)</option>
+        <option value="stretch">Estirar (stretch) </option>
+      </select>
+    </div>
+
+    <!-- Contenedor para el ejemplo de align-content -->
+    <div class="align-content-wrapper">
+      <div id="flexContainerAlignContentExample">
+        <div class="align-content-items1">Item 1</div>
+        <div class="align-content-items2">Item 2</div>
+        <div class="align-content-items3">Item 3</div>
+        <div class="align-content-items4">Item 4</div>
+        <div class="align-content-items5">Item 5</div>
+        <div class="align-content-items6">Item 6</div>
+      </div>
+    </div>
+
+    
+    <p style="color: red;">strech solo funciona si los items no tienen un height definido, como los elementos tienen height definido, <br>
+      esta propiedad no funciona, auque solo abarcaria todo el espacio </p>
+ 
+      <div class="final-nav">
+        <a href="index16.html">PAG 16</a>
+        <a href="index.html">INICIO</a>
+        <a href="index18.html">PAG 18</a> 
+    </div>  
+
+
+
+    
+    
+    <script src="./script2.js"></script>
+</body>
+</html>
